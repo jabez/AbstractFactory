@@ -1,12 +1,27 @@
-﻿using System;
+﻿using implementacao.AutoSocorroAbastractFactory;
+using System;
 
 namespace implementacao
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Escolha o Exemplo:");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("1 - AutoSocorro ");
+
+            var opcao = Console.ReadKey();
+
+            switch (opcao.KeyChar)
+            {
+                case '1':
+                    ExecucaoAutoSocorroAbstractFactory.Executar();
+                    Console.ReadLine();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
