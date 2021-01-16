@@ -1,4 +1,5 @@
 ﻿using implementacao.AutoSocorroAbastractFactory;
+using implementacao.ConceptualAbstractFactory;
 using System;
 
 namespace implementacao
@@ -10,6 +11,7 @@ namespace implementacao
             Console.WriteLine("Escolha o Exemplo:");
             Console.WriteLine("------------------------");
             Console.WriteLine("1 - AutoSocorro ");
+            Console.WriteLine("2 - ConceptualAbstractFactory ");
 
             var opcao = Console.ReadKey();
 
@@ -17,6 +19,10 @@ namespace implementacao
             {
                 case '1':
                     ExecucaoAutoSocorroAbstractFactory.Executar();
+                    Console.ReadLine();
+                    break;
+                case '2':
+                    Client.Executar();
                     Console.ReadLine();
                     break;
                 default:

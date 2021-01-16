@@ -1,4 +1,5 @@
 ﻿using implementacao.ConceptualAbstractFactory.ProductsA;
+using implementacao.ConceptualAbstractFactory.ProductsB;
 
 namespace implementacao.ConceptualAbstractFactory.AbstractFactories
 {
@@ -7,6 +8,11 @@ namespace implementacao.ConceptualAbstractFactory.AbstractFactories
         public IAbstractProductA CreateProductA()
         {
             return new ConcreteProductA1();
+        }
+
+        public IAbstractProductB CreateProductB()
+        {
+            return new ConcreteProductB1();
         }
     }
 }

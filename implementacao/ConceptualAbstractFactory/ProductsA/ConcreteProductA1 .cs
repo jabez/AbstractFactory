@@ -2,7 +2,7 @@
 {
     public class ConcreteProductA1 : IAbstractProductA
     {
-        public string UseFullFunctiionA()
+        public string UseFullFunctionA()
         {
             return "The result of the product A1.";
         }

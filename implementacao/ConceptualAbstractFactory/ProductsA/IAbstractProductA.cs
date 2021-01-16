@@ -2,6 +2,6 @@
 {
     public interface IAbstractProductA
     {
-        string UseFullFunctiionA();
+        string UseFullFunctionA();
     }
 }
